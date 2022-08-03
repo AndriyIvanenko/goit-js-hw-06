@@ -12,14 +12,17 @@ function onFormSubmitHandler(event) {
     alert("всі поля мають бути заповнені");
   }
 
-  console.log();
-  const {
-    elements: { email, password },
-  } = event.currentTarget;
+  //   const {
+  //     elements: { email, password },
+  //   } = event.currentTarget;
 
-  console.log(event.currentTarget.elements);
-  //   console.log(formFields);
+  const formFields = {
+    email: event.currentTarget.elements.email.value,
+    password: event.currentTarget.elements.password.value,
+  };
 
-  // event.currentTarget.reset();
+  //   console.log(event.currentTarget.elements);
+  console.log(formFields);
+
+  event.currentTarget.reset();
 }
-// alert("test");
