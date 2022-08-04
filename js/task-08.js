@@ -10,6 +10,7 @@ function onFormSubmitHandler(event) {
     event.currentTarget.elements.password.value === ""
   ) {
     alert("всі поля мають бути заповнені");
+    return;
   }
 
   //   const {
